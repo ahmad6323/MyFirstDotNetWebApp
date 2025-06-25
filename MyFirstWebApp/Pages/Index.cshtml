@@ -1,0 +1,269 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DevOps Overview - My .NET App</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
+
+        nav {
+            text-align: center;
+            background-color: #003366;
+            padding: 10px;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin: 0 15px;
+                font-size: 1.1rem;
+            }
+
+                nav a:hover {
+                    background-color: #004b99;
+                    border-radius: 5px;
+                }
+
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+            .hero h2 {
+                font-size: 3rem;
+                margin: 0;
+                font-weight: 600;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+                margin-top: 10px;
+            }
+
+        .btn-primary {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+            .btn-primary:hover {
+                background-color: #ff8533;
+            }
+
+        .features, .tools, .pipeline, .environment, .security, .best-practices {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .features, .tools, .pipeline, .environment, .security, .best-practices {
+            background-color: #f9f9f9;
+        }
+
+        .feature, .tool, .pipeline-step, .environment-item, .security-item, .best-practice-item {
+            display: inline-block;
+            width: 22%;
+            padding: 20px;
+            background-color: #fff;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+            .feature i, .tool i, .pipeline-step i, .environment-item i, .security-item i, .best-practice-item i {
+                font-size: 3rem;
+                color: #0066cc;
+                margin-bottom: 10px;
+            }
+
+            .feature h3, .tool h3, .pipeline-step h3, .environment-item h3, .security-item h3, .best-practice-item h3 {
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+
+            .feature p, .tool p, .pipeline-step p, .environment-item p, .security-item p, .best-practice-item p {
+                font-size: 1rem;
+                color: #666;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: white;
+        }
+
+            footer a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muhammad Ahmad -- Welcome to the DevOps World - My .NET App</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#devops-overview">DevOps Overview</a>
+        <a href="#tools">DevOps Tools</a>
+        <a href="#pipeline">DevOps Pipeline</a>
+        <a href="#environment">DevOps Environment</a>
+        <a href="#security">Security in DevOps</a>
+        <a href="#best-practices">DevOps Best Practices</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Building a Strong DevOps Culture</h2>
+        <p>Improve collaboration, automate processes, and streamline your workflow with DevOps tools and practices.</p>
+        <a href="#get-started" class="btn-primary">Get Started</a>
+    </section>
+
+    <!-- DevOps Overview Section -->
+    <section id="devops-overview" class="features">
+        <h2>What is DevOps?</h2>
+        <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops), aiming to shorten the development life cycle and provide continuous delivery with high software quality.</p>
+        <p>It focuses on automation, collaboration, and communication between developers and IT professionals to build, test, and release software faster and more reliably.</p>
+    </section>
+
+    <!-- DevOps Tools Section -->
+    <section id="tools" class="tools">
+        <h2>Popular DevOps Tools</h2>
+        <div class="tool">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>A platform for version control and collaboration, allowing multiple people to work on projects at once.</p>
+        </div>
+        <div class="tool">
+            <i class="fab fa-jenkins"></i>
+            <h3>Jenkins</h3>
+            <p>An open-source automation server to help with continuous integration and continuous delivery (CI/CD).</p>
+        </div>
+        <div class="tool">
+            <i class="fab fa-docker"></i>
+            <h3>Docker</h3>
+            <p>A tool designed to make it easier to create, deploy, and run applications by using containers.</p>
+        </div>
+        <div class="tool">
+            <i class="fas fa-cloud"></i>
+            <h3>AWS</h3>
+            <p>A cloud computing platform that provides a wide range of cloud services, including computing power and storage.</p>
+        </div>
+    </section>
+
+    <!-- DevOps Pipeline Section -->
+    <section id="pipeline" class="pipeline">
+        <h2>DevOps Pipeline</h2>
+        <div class="pipeline-step">
+            <i class="fas fa-code"></i>
+            <h3>1. Code</h3>
+            <p>Developers write code and commit it to a shared repository.</p>
+        </div>
+        <div class="pipeline-step">
+            <i class="fas fa-cogs"></i>
+            <h3>2. Build</h3>
+            <p>Automated build process compiles code into executable artifacts.</p>
+        </div>
+        <div class="pipeline-step">
+            <i class="fas fa-box"></i>
+            <h3>3. Test</h3>
+            <p>Automated tests verify the quality and functionality of the code.</p>
+        </div>
+        <div class="pipeline-step">
+            <i class="fas fa-play"></i>
+            <h3>4. Deploy</h3>
+            <p>Code is deployed to production or staging environments for end users to access.</p>
+        </div>
+    </section>
+
+    <!-- DevOps Security Section -->
+    <section id="security" class="security">
+        <h2>Security in DevOps</h2>
+        <div class="security-item">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Secure Coding Practices</h3>
+            <p>Implement secure coding practices from the beginning to prevent vulnerabilities.</p>
+        </div>
+        <div class="security-item">
+            <i class="fas fa-lock"></i>
+            <h3>Automated Security Testing</h3>
+            <p>Incorporate automated security tests into the CI/CD pipeline to ensure ongoing security assessments.</p>
+        </div>
+    </section>
+
+    <!-- DevOps Best Practices Section -->
+    <section id="best-practices" class="best-practices">
+        <h2>DevOps Best Practices</h2>
+        <div class="best-practice-item">
+            <i class="fas fa-users-cog"></i>
+            <h3>Collaboration</h3>
+            <p>Encourage communication and collaboration between development and operations teams.</p>
+        </div>
+        <div class="best-practice-item">
+            <i class="fas fa-tools"></i>
+            <h3>Automation</h3>
+            <p>Automate repetitive tasks like testing, building, and deployment to improve efficiency.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My .NET App</p>
+        <div>
+            <a href="#terms">Terms</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
+
